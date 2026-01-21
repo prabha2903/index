@@ -1,0 +1,31 @@
+Get - retrieve data
+Post- create new data
+Put-update entire data
+Patch-update particular field in the data
+Delete = delete data
+
+Status code
+100-199 - Information 
+200-299 - successful
+300-399 - redirectional(api change)
+400-499 - client side error(errors in sender side)
+500-599 - server side error(errors in receiver side)
+
+after the middleware execution, rest api will execute
+
+server->routes(endpoint)->controller
+when we create controller->routes->server
+module.exports=mongoose.model('Users'(collection in db),userSchema);
+In models , we defined all required schemas
+
+await--> wait until promise will resolved
+promise -(pending,resolved,reject)
+
+bcrypt uses algorithm 
+10 is stable 
+12 password strong,process weak
+8 process strong, password weak
+2^10 = 1024
+
+exports-one file can multiple import --> import with curly braces
+module.export - single export --> import directly without curly braces
