@@ -19,4 +19,4 @@ userId:{
     required:true
 }
 })
-module.exports=mongoose.model('Task',userSchema);
+module.exports=mongoose.model("Task",taskSchema);

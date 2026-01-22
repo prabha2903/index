@@ -11,6 +11,8 @@ console.log("connected successfully");
 }).catch((err)=>{console.log(err)})
 
 app.use('/auth',require('./routes/authRoutes'))
+app.use('/task',require('./routes/taskRoutes'))
+
 app.get('/api',(req,res)=>{
     res.send('Hi!! From express')
 })

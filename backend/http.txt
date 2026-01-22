@@ -29,3 +29,18 @@ bcrypt uses algorithm
 
 exports-one file can multiple import --> import with curly braces
 module.export - single export --> import directly without curly braces
+
+token
+{"token":{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzA3MmY4YjFhMzJmMzAyNTc5MTYwNyIsImlhdCI6MTc2OTA1Mjg5NCwiZXhwIjoxNzY5MTM5Mjk0fQ.qgQyvg6eEQhSjQAgjBf_sUmvj1scg78EIAM5JVrZgMI"}}
+
+headers:{
+    authorization:Bearer <token>
+}
+jwt.sign->create token
+jwt.verify->verify token
+
+{
+  "title": "Learn MERN",
+  "description": "Finish task module",
+  "userId": "65f1c9b2a9e4c123456789ab"
+}
