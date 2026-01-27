@@ -39,8 +39,8 @@ headers:{
 jwt.sign->create token
 jwt.verify->verify token
 
+
+render
 {
-  "title": "Learn MERN",
-  "description": "Finish task module",
-  "userId": "65f1c9b2a9e4c123456789ab"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY5NzFmYzNmMTU0NWNkYjhkY2NlMWZjOCIsImlhdCI6MTc2OTA5Njc4OCwiZXhwIjoxNzY5MTgzMTg4fQ.hHj5eQPeSiXfhds4pTWPlb8Vf-rPoQLIe0TVAqEhT6k"
 }

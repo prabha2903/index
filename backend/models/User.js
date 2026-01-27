@@ -10,7 +10,7 @@ const userSchema=mongoose.Schema({
 },
 password:{
     type:String,
-    requires:true
+    required:true
 }
 })
 module.exports=mongoose.model('User',userSchema);

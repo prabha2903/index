@@ -1,3 +1,4 @@
+
 /*let a=6;
 let b=a;
 a=4;
@@ -34,7 +35,7 @@ sum(11,10);*/
 }
 sum(11,2,3);*/
 
-function double(num){
+/*function double(num){
     return num*2;
 }
 
@@ -47,6 +48,7 @@ console.log(tripleArr);
 /*function isOdd(num){
      return num%2!=0 ;
 }*/
+/*
 let oddNumbers = arr.filter((num)=>num%2!=0);
 console.log(oddNumbers);
 
@@ -58,16 +60,17 @@ let array1 = [1,2,3,4,5,6];
 let sum = array1.reduce((product,current)=>{
     return product*current;
 },1);
-console.log(sum);
+console.log(sum);*/
 
-let tripleOfArray = array1.map((n1)=>n1*3)
+/*let tripleOfArray = array1.map((n1)=>n1*3)
 console.log(tripleOfArray);
 let evenNumbers = tripleOfArray.filter((n1)=>n1%2==0);
 console.log(evenNumbers);
 let sumOfEven = evenNumbers.reduce((add,current1)=>{
     return add+current1;
 },0);
-console.log(sumOfEven);
+console.log(sumOfEven);*/
+
 /*let a = [1,2,3,4,5,6];
 let result = a.map((n1)=>n1*3)
              .filter((n1)=>n1%2==0)
@@ -76,19 +79,22 @@ let result = a.map((n1)=>n1*3)
              },0)
 console.log(result);*/
 
+/*
 // Destructuring   rest operator => ... it assign all values in one variable
 let b = [1,2,3,4,5]
 const [one,...two] = b;
-console.log(two);
+console.log(two);*/
 
 //it will spread already created array
-let num= [0,...b,6,7]
+//let num= [0,...b,6,7]
 
+/*
 //console.log(num);
 const obj1 = {x:3,y:5}
 const obj2 = {y:5,z:7}
 const spread = {...obj1,...obj2}
-console.log(spread);
+console.log(spread);*/
+
 /*
 const promise = new Promise((resolve,reject)=>{
     setTimeout(()=>{
@@ -118,10 +124,10 @@ promise.then((result)=>console.log(result))
   .then((data) => data.map((todo) => {
       console.log(todo.title); // access property inside each object
   }))
-  .catch((err) => console.log(err));
+  .catch((err) => console.log(err));*/
 
 
-async function fetchApi(){
+/*async function fetchApi(){
     try {
         const response = await fetch(
          'https://jsonplaceholder.typicode.com/todos/1'
@@ -133,15 +139,16 @@ async function fetchApi(){
     } catch (error) {
         console.log(error);
     }
-}
+}*/
 //fetchApi();
 
+/*
 //String literals
 let name = 'prabha'
 let age = 24
 console.log(`I am ${name} and my age is ${age} `);*/
 
-const mul = (a,b)=>{
+/*const mul = (a,b)=>{
     return a*b;
 }
 const square=(n)=>{
@@ -158,4 +165,19 @@ Promise.resolve().then(console.log('From promises'))
 setTimeout(()=>{
     console.log('Inside Timeout');
 },2000)
-console.log('last');
+console.log('last');*/
+
+const fetchApi=async()=>{
+    try {
+        const response = await fetch(
+         'http://localhost:4000/task/getTask'
+        )
+        const data = await response.json();
+        data.map((user)=>{
+            console.log(user)
+        })
+    } catch (error) {
+        console.log(error);
+    }
+}
+fetchApi();
