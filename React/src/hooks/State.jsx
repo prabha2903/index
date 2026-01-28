@@ -1,10 +1,12 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useState } from 'react'
 
 const State = () => {
     const [count,setCount] = useState(0);
     const [like,setLike] = useState(0);
-
+  useEffect(()=> {
+    console.log('From UseEffect')
+  })
   return (
     <div>
         <h3>Like:{like}</h3>
